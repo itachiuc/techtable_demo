@@ -2,18 +2,22 @@
     "courses":{
         "android":{
             "name": "Android Development with Kotlin",
+            "tagline" : "Learn to create your own application",
             "requirements":["Laptop","Android Studio","min 6 gb ram"],
             "prerequisites":["basic understanding of programming","determination"],
             "start_image":"link",
-            "related":["machine learning","ethical hacking","web development"]
+            "related":["IOS Development","Machine Learning","Ethical Hacking","Web Development"],
+            "related_tag":["Be a part of Apple","Start manipulating data to predict future","Make your system more secure","Design the website you always dreamt of"]
 
         },
         "web":{
             "name": "Web Development Bootcamp",
+            "tagline":"Design the website you always dreamt of",
             "requirements":["Laptop","Brower"],
             "prerequisites":["basic understanding of programming","determination"],
             "start_image":"link",
-            "related":["machine learning","ethical hacking","android"]
+            "related":["Machine Learning","Ethical Hacking","Android Development","IOS Development"],
+            "related_tag":["Start manipulating data to predict future","Make your system more secure","Learn to create your own application","Be a part of Apple"]
 
         }
     }

@@ -21,11 +21,12 @@ def home():
 def overview(course_name):
 	title = course_name
 	course = data['courses'][course_name]['name']
-	details = data['courses'][course_name]['requirements']
+	tagline = data['courses'][course_name]['tagline']
+	related = data['courses'][course_name]['related']
+	related_tag = data['courses'][course_name]['related_tag']
+	# print(details)
 
-	print(details)
-
-	return render_template("home.html",course=course,details=details,title=title)
+	return render_template("index.html",course=course,tagline=tagline,title=title,related=related,related_tag=related_tag)
 	
 
 if __name__ == '__main__':
