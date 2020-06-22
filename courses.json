@@ -2,7 +2,7 @@
     "courses":{
         "android":{
             "name": "Android Development with Kotlin",
-            "requiremets":["Laptop","Android Studio","min 6 gb ram"],
+            "requirements":["Laptop","Android Studio","min 6 gb ram"],
             "prerequisites":["basic understanding of programming","determination"],
             "start_image":"link",
             "related":["machine learning","ethical hacking","web development"]
@@ -10,7 +10,7 @@
         },
         "web":{
             "name": "Web Development Bootcamp",
-            "requiremets":["Laptop","Brower"],
+            "requirements":["Laptop","Brower"],
             "prerequisites":["basic understanding of programming","determination"],
             "start_image":"link",
             "related":["machine learning","ethical hacking","android"]

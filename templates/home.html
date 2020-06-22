@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HomePage</title>
+	<title>{{title}}</title>
 </head>
 <body>
 	<h1>Welcome to TechTable</h1>
 
-	<a href="/android"><button>Andoid</button></a>
-	{{course}}
+	<a href="/course/android"><button>Andoid</button></a>
+	<a href="/course/web"><button>Web</button></a>
+	<a href="/"><button>Home</button></a>
 
-	{{details}}
+	<br>
+	<h1>{{course}}</h1>
+	<h2>Details</h2>
+
+	<ul> 
+		<!-- For loop logic of jinja template -->
+		{%for i in details%} 
+		  
+		    <li>{{i}}</li> 
+		{%endfor%} 
+  
+	</ul> 
 </body>
 </html>

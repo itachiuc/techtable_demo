@@ -17,12 +17,15 @@ data = json.load(f)
 def home():
 	return render_template("home.html")
 
-@app.route('/android',methods=['GET','POST'])
-def android_overview():
-	course = data['courses']['android']['name']
-	details="Android Development"
+@app.route('/course/<course_name>',methods=['GET','POST'])
+def overview(course_name):
+	title = course_name
+	course = data['courses'][course_name]['name']
+	details = data['courses'][course_name]['requirements']
 
-	return render_template("home.html",course=course,details=details)
+	print(details)
+
+	return render_template("home.html",course=course,details=details,title=title)
 	
 
 if __name__ == '__main__':
