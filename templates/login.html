@@ -42,7 +42,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 text">
                         <div class="logo">
-                        <a href="/" class="navbar-brand mt-0 mb-0"><img src="{{ url_for('static',filename='assets_b/img/TT logo (1).png')}}" width="200px"  alt="Techtable Logo" class="d-block"></a>
+                        <a href="/" class="navbar-brand mt-0 mb-0" style="color: white;"><h1><strong>SMARTEDU</strong></h1></a>
                     </div>
                 </div>
                 
@@ -119,13 +119,21 @@
 	                        </div>
 				            <button type="submit" class="btn">Sign in!</button>
 				    	</form>
-				    	<div class="social-login">
+				    	<!-- <div class="social-login">
                         	<p style="color:white">Or login with:</p>
                         	<div class="social-login-buttons">
 	                        	<a class="btn btn-link-1" href="#"><i  class="fa fa-facebook"></i></a>
 	                        	<a class="btn btn-link-1" href="#"><i  class="fa fa-twitter"></i></a>
 	                        	<a class="btn btn-link-1" href="#"><i  class="fa fa-google-plus"></i></a>
                         	</div>
+                        </div> -->
+                        <div class="social-login">
+                            <p style="color:white">Or login with:</p>
+                            <div class="social-login-buttons">
+                                <a class="btn btn-link-1" href="#"><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-link-1" href="#"><i class="fa fa-twitter"></i></a>
+                                <button class="btn btn-link-1" onclick="Gsignin()">teju</button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6 forms-right-icons">
@@ -156,6 +164,35 @@
         	</div>
         </div>
 
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        <script>
+
+            function Gsignin() {
+                var firebaseConfig = {
+                    apiKey: "AIzaSyB4ouGByJQadtoN5-AZDE8bN9r5VsOoJ8U",
+                    authDomain: "kriyativeed-e82dd.firebaseapp.com",
+                    databaseURL: "https://kriyativeed-e82dd.firebaseio.com",
+                    projectId: "kriyativeed-e82dd",
+                    storageBucket: "kriyativeed-e82dd.appspot.com",
+                    messagingSenderId: "611772751447",
+                    appId: "1:611772751447:web:2636770126590471e10d12",
+                    measurementId: "G-MGT9CM9KV7"
+                };
+
+                firebase.initializeApp(firebaseConfig);
+
+                var base_provider = new firebase.auth.GoogleAuthProvider()
+                firebase.auth().signInWithPopup(base_provider).then((res) => {
+                    console.log('success!!');
+                    console.log(res);
+                    alert('success');
+                })
+                    .catch((error) => {
+                        console.log('failed!!');
+                        console.log(error);
+                    })
+            }
+        </script>
       
 
         <!-- Javascript -->
