@@ -15,7 +15,11 @@ data = json.load(f)
 
 @app.route('/',methods=['GET','POST']) #flask decorator
 def home():
-	return render_template("home.html")
+	return render_template("index.html")
+
+@app.route('/login',methods=['GET','POST']) #flask decorator
+def login():
+	return render_template("login.html")
 
 @app.route('/course/<course_name>',methods=['GET','POST'])
 def overview(course_name):
@@ -32,7 +36,7 @@ def overview(course_name):
 	# print(contents)
 	# print(faq)
 
-	return render_template("index.html",course=course,tagline=tagline,title=title,related=related,related_tag=related_tag,faq=faq,contents=contents,length=length,inner_contents=inner_contents)
+	return render_template("courses.html",course=course,tagline=tagline,title=title,related=related,related_tag=related_tag,faq=faq,contents=contents,length=length,inner_contents=inner_contents)
 	
 
 if __name__ == '__main__':

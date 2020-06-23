@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> Index</title>
+  <title>{{title}}</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -13,16 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   
-  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  
-  <link href="assets/css/style.css" rel="stylesheet"> -->
   <link href="{{ url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{ url_for('static',filename='assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
   <link href="{{ url_for('static',filename='assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
@@ -67,15 +57,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4  order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Techtable Mentorship Program.</h1>
-          <h2>Better Solutions For Your Problems</h2>
+          <h1>{{course}}</h1>
+          <h2>{{tagline}}</h2>
           <div class="d-lg-flex">
             <a href="/login" class="btn-get-started scrollto">Get Started</a>
             
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="{{ url_for('static',filename='assets/img/hero-img.png')}}" class="img-fluid animated" alt="">
+          <img src="{{ url_for('static',filename='assets/img/3426526-removebg-1.png')}}" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -85,7 +75,7 @@
   <main id="main">
 
     
-    <section id="about" class="about">
+    <!-- <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -116,7 +106,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
     
     <section id="why-us" class="why-us section-bg">
@@ -127,7 +117,7 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3>We provide 24/7 support and interaction with your mentors.</strong></h3>
+              <h3>Why this course...</strong></h3>
               <p>
                 Join us and learn to work in live projects from different fields of Computer science.
               </p>
@@ -136,72 +126,69 @@
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> One to one interaction with your mentor. <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><img src="{{ url_for('static',filename='assets/img/certificate.png')}}" width="30" height="30" alt="">  Earn a
+                            Certificate <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
                     <p>
-                      One to one interaction with your mentor.
+                      Complete the virtual experience and earn a
+                        personalized completion certificate
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Doubts? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><img src="{{ url_for('static',filename='assets/img/timer.png')}}" width="30" height="30" alt="">  Do it in your own
+                    time <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Doubt clearing anytime with us.
+                      Learn at your own pace and reach your personal goals.
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Worried about projects? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><img src="{{ url_for('static',filename='assets/img/favorite.png')}}" width="30" height="30" alt="">  Prioritize your
+                    Application <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Project based learning.
+                      Your application will be prioritized for review when you apply at
+                        Techtable
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-4" class="collapsed"><span>04</span> Study from home? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-4" class="collapsed"><img src="{{ url_for('static',filename='assets/img/resume.png')}}" width="30" height="30" alt="">  Make your CV and LinkedIn
+                    stand out <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-4" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Live and interactive sessions.
+                      Include this experience on your CV and LinkedIn profile.
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-5" class="collapsed"><span>05</span> Working in teams? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-5" class="collapsed"><img src="{{ url_for('static',filename='assets/img/portfolio.png')}}" width="30" height="30" alt="">  Shortlist for exclusive
+                    Oppurtunities <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-5" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Peer learning methods
+                      TechTable will reach out with opportunities for networking
+                      events, mentoring programs and stacks.
                     </p>
                   </div>
                 </li>
-
-                <li>
-                  <a data-toggle="collapse" href="#accordion-list-6" class="collapsed"><span>06</span> Networking? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-6" class="collapse" data-parent=".accordion-list">
-                    <p>
-                      Great networking.
-                    </p>
-                  </div>
-                </li>
-
-                
+                               
               </ul>
             </div>
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("static/assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("static/assets/img/3411109.jpg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
     </section>
 
-    
     <section id="skills" class="skills">
       <div class="container" data-aos="fade-up">
 
@@ -210,40 +197,42 @@
             <img src="{{ url_for('static',filename='assets/img/skills.png')}}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>Best selling courses from us, with us!</h3>
+            <h3>Why this course?</h3>
             <p class="font-italic">
-              Find what you want to learn and code on->
+              What you learn int his course->
             </p>
 
             <div class="skills-content">
 
               <div class="progress">
-                <span class="skill">Machine Leaning <i class="val">88%</i></span>
+                <span class="skill">Video Lectures <i class="val">42%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
-                <span class="skill">Wed Development <i class="val">74%</i></span>
+                <span class="skill">Challanges <i class="val">23%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
-                <span class="skill">Data SCience <i class="val">71%</i></span>
+                <span class="skill">Project <i class="val">20%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
-                <span class="skill">UX/UI <i class="val">55%</i></span>
+                <span class="skill">Quiz <i class="val">15%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
+
+              
 
             </div>
 
@@ -253,6 +242,191 @@
       </div>
     </section>
 
+
+    <div class="container-fluid col-lg-9 mb-4" data-aos="fade-up">
+      <br>
+      <h3 style="color: #37517e;" class="content">Course Contents</h3>
+      <hr>
+      <!-- collapse -->
+      <div class="accordion " id="accordionExample" >
+        {%for i in range(0,length)%}
+        <div class="card">
+              <div class="card-header " id="heading{{i+1}}">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse"
+                          data-target="#collapse{{i+1}}" aria-expanded="true" aria-controls="collapse{{i+1}}">
+                           {{contents[i]}}<i class="bx bx-chevron-down icon-show"></i>
+                      </button>
+                  </h2>
+              </div>
+
+              <div id="collapse{{i+1}}" class="collapse" aria-labelledby="heading{{i+1}}" data-parent="#accordionExample">
+                  <div class="card-body">
+                    {%for j in inner_contents[i]%}
+                      {{j}}
+                      <hr>
+                    {%endfor%}
+                      <!-- Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      End of chapter 1 -->
+
+                  </div>
+              </div>
+          </div>
+        {%endfor%}
+<!--           <div class="card">
+              <div class="card-header " id="headingOne">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse"
+                          data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           1 Introduction <i class="bx bx-chevron-down icon-show"></i>
+                      </button>
+                  </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      End of chapter 1
+
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse"
+                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          2 Supervised Learning <i class="bx bx-chevron-down icon-show"></i>
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      End of chapter 2
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          3 Unsupervised Learning <i class="bx bx-chevron-down icon-show"></i>
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      End of chapter 3
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse"
+                          data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          4 Fine Tuning models <i class="bx bx-chevron-down icon-show"></i>
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      End of chapter 4
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse"
+                          data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          5 Additional contents <i class="bx bx-chevron-down icon-show"></i>
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      Intro to Machine Learning
+                      <hr>
+                      Setting up the environment
+                      <hr>
+                      End of chapter 5
+                  </div>
+              </div>
+          </div> -->
+
+      </div>
+  </div>
+
+    
+    
     
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
@@ -263,35 +437,36 @@
         </div>
 
         <div class="row">
+
           <div class="col-xl-3  d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxs-brain"></i></div>
-              <h4><a href="/course/android">Artificial Intellgence</a></h4>
-              <p>adsadfafafdsgsaffng;lafngafn fgkjbafkjv fdkjb</p>
+              <h4><a href="/course/web">{{related[0]}}</a></h4>
+              <p>{{related_tag[0]}}</p>
             </div>
           </div>
 
           <div class="col-xl-3  d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-javascript"></i></div>
-              <h4><a href="/course/android">Javascript</a></h4>
-              <p>fdfbndf;obnoafbno;af dfofjoaifjeawjfwejo</p>
+              <h4><a href="/course/web">{{related[1]}}</a></h4>
+              <p>{{related_tag[1]}}</p>
             </div>
           </div>
 
           <div class="col-xl-3  d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-react"></i></div>
-              <h4><a href="/course/web">React.js</a></h4>
-              <p>Efbdsfbaluodwojbd  oajd'pakdpojda</p>
+              <h4><a href="/course/android">{{related[2]}}</a></h4>
+              <p>{{related_tag[2]}}</p>
             </div>
           </div>
 
           <div class="col-xl-3  d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bx bxs-data"></i></div>
-              <h4><a href="/course/web">Database</a></h4>
-              <p>svfbvafbg jyrujr ntyn erbgbs</p>
+              <h4><a href="/course/android">{{related[3]}}</a></h4>
+              <p>{{related_tag[3]}}</p>
             </div>
           </div>
 
@@ -305,19 +480,19 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <p>Who are we and where do we come from. Get to know us better and up close.</p>
+          <h2>Know your mentor!</h2>
+          <p>Who are we and where do we come from? Get to know us better and up close.</p>
         </div>
 
         <div class="row">
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
               <div class="pic"><img src="{{ url_for('static',filename='assets/img/team/people-1.jpg')}}" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Sonu Sharma</h4>
-                <span>Chief Executive Officer</span>
-                <p>Abcdefghijklmnopqrstuvwxyz</p>
+                <span>Web Development Expert</span>
+                <p>Skills: HTML, SASS, JS, jquery, Angular </p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -328,119 +503,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="{{ url_for('static',filename='assets/img/team/people-1.jpg')}}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sudesh Kumar</h4>
-                <span>Product Manager</span>
-                <p>Abcdefghijklmnopqrstuvwxyz</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="{{ url_for('static',filename='assets/img/team/people-1.jpg')}}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Deepanshu Mishra</h4>
-                <span>CTO</span>
-                <p>Abcdefghijklmnopqrstuvwxyz</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="{{ url_for('static',filename='assets/img/team/people-1.jpg')}}" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Vidender Kumar</h4>
-                <span>Accountant</span>
-                <p>Abcdefghijklmnopqrstuvwxyz</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-   
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Anyhting relevent to our Couses pricing will be here</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Free Plan</h3>
-              <h4><sup>Rs.</sup>0<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li class="na"><i class="bx bx-x"></i> <span>Abcdefghijklmnopqrstuvwxyz</span></li>
-                <li class="na"><i class="bx bx-x"></i> <span>Abcdefghijklmnopqrstuvwxyz</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business Plan</h3>
-              <h4><sup>Rs.</sup>29<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Developer Plan</h3>
-              <h4><sup>Rs.</sup>49<span>per month</span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-                <li><i class="bx bx-check"></i> Abcdefghijklmnopqrstuvwxyz</li>
-              </ul>
-              <a href="#" class="buy-btn">Get Started</a>
-            </div>
-          </div>
-
-        </div>
+         </div>
 
       </div>
     </section>
@@ -457,46 +520,46 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">{{faq[0][0]}}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
                 <p>
-                  ------------------------------------------------------------------------------------
+                  {{faq[0][1]}}
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">{{faq[1][0]}}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-parent=".faq-list">
                 <p>
-                  ------------------------------------------------------------------------------------
+                  {{faq[1][1]}}
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">{{faq[2][0]}}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-parent=".faq-list">
                 <p>
-                  ------------------------------------------------------------------------------------
+                  {{faq[2][1]}}
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">{{faq[3][0]}}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-parent=".faq-list">
                 <p>
-                  ------------------------------------------------------------------------------------
+                  {{faq[3][1]}}
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">{{faq[4][0]}}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-parent=".faq-list">
                 <p>
-                  ------------------------------------------------------------------------------------
+                  {{faq[4][1]}}
                 </p>
               </div>
             </li>
@@ -516,33 +579,7 @@
           <p>For any enquiry, just contact us.</p>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>Random Street, Random city, PIN-222222</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@abcde.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 999 8888 777</p>
-              </div>
-              
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-            </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+           <div class="col-lg-9 mx-auto mt-5 mt-lg-0 d-flex align-items-center">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -589,18 +626,9 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>NAME</h3>
-            <p>
-              random Street <br>
-              random city, 222222<br>
-              India <br><br>
-              <strong>Phone:</strong> +91 ---- --- ---<br>
-              <strong>Email:</strong> info@xyz.com<br>
-            </p>
-          </div>
+          
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-6 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
@@ -613,7 +641,7 @@
 
          
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-6 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
             <p>Contact us here.</p>
             <div class="social-links mt-3">
@@ -641,10 +669,9 @@
     </div>
   </footer>
 
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
-  <div id="preloader"></div>
+  <!-- <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div> -->
 
-  <!-- Vendor JS Files -->
   <!-- Vendor JS Files -->
   <script src="{{ url_for('static',filename='assets/vendor/jquery/jquery.min.js')}}"></script>
   <script src="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -657,8 +684,7 @@
   <script src="{{ url_for('static',filename='assets/vendor/aos/aos.js')}}"></script>
 
   <!-- Main JS File -->
-  <script src="{{ url_for('static',filename='assets/js/main.js')}}"></script>
-
+  <script src="{{ url_for('static',filename='assets/js/main.js')}}"></script> 
 </body>
 
 </html>
