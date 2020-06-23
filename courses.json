@@ -7,7 +7,11 @@
             "prerequisites":["basic understanding of programming","determination"],
             "start_image":"link",
             "related":["IOS Development","Machine Learning","Ethical Hacking","Web Development"],
-            "related_tag":["Be a part of Apple","Start manipulating data to predict future","Make your system more secure","Design the website you always dreamt of"]
+            "related_tag":["Be a part of Apple","Start manipulating data to predict future","Make your system more secure","Design the website you always dreamt of"],
+            "faq":[["question one","answer one"],["question two","answer two"],["question three","answer three"],["question four","answer four"],["question five","answer five"]],
+            "contents":["1. Introduction","2. Supervised Learning","3. Unsupervised Learing","4. Fine Tuning","5. Additional Contents"],
+            "inner_contents":[["Intro","Setting up environment","Installing modules","End of chapter 1"],["Building our first model","Linear regression","logistic regression","KNN","Decision Tree","End of chapter 2"],["Clustering","Reinforcement learning","Hierarical Learning","End of chapter 3"],["Dimensionality Reduction","PCA","XGBOOST","End of chapter 4"],["Python Basics","Into to Deep Learning","Neural Network","End of chapter 5"]]
+
 
         },
         "web":{
@@ -17,7 +21,11 @@
             "prerequisites":["basic understanding of programming","determination"],
             "start_image":"link",
             "related":["Machine Learning","Ethical Hacking","Android Development","IOS Development"],
-            "related_tag":["Start manipulating data to predict future","Make your system more secure","Learn to create your own application","Be a part of Apple"]
+            "related_tag":["Start manipulating data to predict future","Make your system more secure","Learn to create your own application","Be a part of Apple"],
+            "faq":[["question one","answer one"],["question two","answer two"],["question three","answer three"],["question four","answer four"],["question five","answer five"]],
+            "contents":["1. Introduction","2. Supervised Learning","3. Unsupervised Learing","4. Fine Tuning","5. Additional Contents"],
+            "inner_contents":[["Intro","Setting up environment","Installing modules","End of chapter 1"],["Building our first model","Linear regression","logistic regression","KNN","Decision Tree","End of chapter 2"],["Clustering","Reinforcement learning","Hierarical Learning","End of chapter 3"],["Dimensionality Reduction","PCA","XGBOOST","End of chapter 4"],["Python Basics","Into to Deep Learning","Neural Network","End of chapter 5"]]
+
 
         }
     }

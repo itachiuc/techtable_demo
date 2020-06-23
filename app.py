@@ -24,9 +24,15 @@ def overview(course_name):
 	tagline = data['courses'][course_name]['tagline']
 	related = data['courses'][course_name]['related']
 	related_tag = data['courses'][course_name]['related_tag']
+	faq = data['courses'][course_name]['faq']
+	contents = data['courses'][course_name]['contents']
+	length = len(contents)
+	inner_contents = data['courses'][course_name]['inner_contents']
 	# print(details)
+	# print(contents)
+	# print(faq)
 
-	return render_template("index.html",course=course,tagline=tagline,title=title,related=related,related_tag=related_tag)
+	return render_template("index.html",course=course,tagline=tagline,title=title,related=related,related_tag=related_tag,faq=faq,contents=contents,length=length,inner_contents=inner_contents)
 	
 
 if __name__ == '__main__':
