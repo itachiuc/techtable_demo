@@ -21,6 +21,10 @@ def home():
 def login():
 	return render_template("login.html")
 
+@app.route('/new',methods=['GET','POST']) #flask decorator
+def new():
+	return render_template("new.html")
+
 @app.route('/course/<course_name>',methods=['GET','POST'])
 def overview(course_name):
 	title = course_name
