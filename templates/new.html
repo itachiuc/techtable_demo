@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8
+        <meta http-equiv="X-UA-Compatible content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets_b/bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets_b/font-awesome/css/font-awesome.min.css')}}">
+		<link rel="stylesheet" href="{{ url_for('static',filename='assets_b/css/form-elements.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='assets_b/css/style.css')}}">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="{{ url_for('static',filename='assets_b/ico/favicon.png')}}">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url_for('static',filename='assets_b/ico/apple-touch-icon-144-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url_for('static',filename='assets_b/ico/apple-touch-icon-114-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url_for('static',filename='assets_b/ico/apple-touch-icon-72-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" href="{{ url_for('static',filename='assets_b/ico/apple-touch-icon-57-precomposed.png')}}">
+
+    </head>
+
+    <body style="background-image: url('static/assets_b/img/backgrounds/1.jpg'); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;;">
+
+        <!-- Top content -->
+        <div class="top-content" >
+        	<div class="container">
+                	
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <div class="logo">
+                        <a href="/" class="navbar-brand mt-0 mb-0" style="color: white;"><h1><strong>SMARTEDU</strong></h1></a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 show-forms">
+                    	<span style="color:white" class="show-login-form active">Login</span> 
+                    	
+                    </div>
+                </div>
+                
+                <div class="row register-form">
+                    <div class="col-sm-4 col-sm-offset-1">
+                        <form role="form" action="" method="post" class="l-form">
+                            <div class="form-group">
+                                <label class="sr-only" for="l-form-username">Username</label>
+                                <input type="text" name="l-form-username" placeholder="Username..." class="l-form-username form-control" id="l-form-username">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="l-form-password">Password</label>
+                                <input type="password" name="l-form-password" placeholder="Password..." class="l-form-password form-control" id="l-form-password">
+                            </div>
+                            <button type="submit" class="btn">Sign in!</button>
+                        </form>
+                        <div class="social-login">
+                            <p style="color:white">Or login with:</p>
+                            <div class="social-login-buttons">
+                                <a class="btn btn-link-1" href="#"><i  class="fa fa-facebook"></i></a>
+                                <a class="btn btn-link-1" href="#"><i  class="fa fa-twitter"></i></a>
+                                <a class="btn btn-link-1" href="#"><i  class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-6 forms-right-icons">
+                        <div class="row">
+                            <div class="col-sm-2 icon"><i style="color:white"  class="fa fa-user"></i></div>
+                            <div class="col-sm-10">
+                                <h3 style="color:white">One to one interaction with mentor.</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 icon"><i style="color:white"  class="fa fa-eye"></i></div>
+                            <div class="col-sm-10">
+                                <h3 style="color:white">Recommendation based on performance.</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 icon"><i style="color:white"  class="fa fa-twitter"></i></div>
+                            <div class="col-sm-10">
+                                <h3 style="color:white">Great netwoking</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                    
+        	</div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+        <script>
+
+            function Gsignin() {
+                var firebaseConfig = {
+                    apiKey: "AIzaSyB4ouGByJQadtoN5-AZDE8bN9r5VsOoJ8U",
+                    authDomain: "kriyativeed-e82dd.firebaseapp.com",
+                    databaseURL: "https://kriyativeed-e82dd.firebaseio.com",
+                    projectId: "kriyativeed-e82dd",
+                    storageBucket: "kriyativeed-e82dd.appspot.com",
+                    messagingSenderId: "611772751447",
+                    appId: "1:611772751447:web:2636770126590471e10d12",
+                    measurementId: "G-MGT9CM9KV7"
+                };
+
+                firebase.initializeApp(firebaseConfig);
+
+                var base_provider = new firebase.auth.GoogleAuthProvider()
+                firebase.auth().signInWithPopup(base_provider).then((res) => {
+                    console.log('success!!');
+                    console.log(res);
+                    alert('success');
+                })
+                    .catch((error) => {
+                        console.log('failed!!');
+                        console.log(error);
+                    })
+            }
+        </script>
+      
+
+        <!-- Javascript -->
+        <script src="{{ url_for('static',filename='assets_b/js/jquery-1.11.1.min.js')}}"></script>
+        <script src="{{ url_for('static',filename='assets_b/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{ url_for('static',filename='assets_b/js/jquery.backstretch.min.js')}}"></script>
+        <script src="{{ url_for('static',filename='assets_b/js/scripts.js')}}"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
