@@ -36,11 +36,12 @@ def overview(course_name):
 	contents = data['courses'][course_name]['contents']
 	length = len(contents)
 	inner_contents = data['courses'][course_name]['inner_contents']
+	related_links = data['courses'][course_name]['related_links']
 	# print(details)
 	# print(contents)
 	# print(faq)
 
-	return render_template("courses.html",course=course,tagline=tagline,title=title,related=related,related_tag=related_tag,faq=faq,contents=contents,length=length,inner_contents=inner_contents)
+	return render_template("courses.html",course=course,tagline=tagline,title=title,related=related,related_tag=related_tag,faq=faq,contents=contents,length=length,inner_contents=inner_contents,related_links=related_links)
 	
 
 if __name__ == '__main__':
