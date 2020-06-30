@@ -15,7 +15,7 @@ data = json.load(f)
 
 @app.route('/',methods=['GET','POST']) #flask decorator
 def home():
-	return render_template("tech.html")
+	return render_template("index.html")
 
 @app.route('/login',methods=['GET','POST']) #flask decorator
 def login():
