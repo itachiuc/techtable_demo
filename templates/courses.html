@@ -34,7 +34,7 @@
     <div class="container d-flex align-items-center">
 
       
-      <a href="/" class="navbar-brand mt-0 mb-0" style="color: white;"><h1>SMARTEDU</h1><!-- <img src="{{ url_for('static',filename='assets/img/TT logo (1).png')}}" width="200px"  alt="Techtable Logo" class="d-block"> --></a>
+      <a href="/" class="navbar-brand mt-0 mb-0" style="color: white;"><h1>SMARTEDU</h1></a>
       <br>
      
       <nav class="nav-menu d-none d-lg-block ml-auto">
@@ -441,7 +441,7 @@
           <div class="col-xl-3  d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxs-brain"></i></div>
-              <h4><a href="/course/web">{{related[0]}}</a></h4>
+              <h4><a href="/course/{{related_links[0]}}">{{related[0]}}</a></h4>
               <p>{{related_tag[0]}}</p>
             </div>
           </div>
@@ -449,7 +449,7 @@
           <div class="col-xl-3  d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-javascript"></i></div>
-              <h4><a href="/course/web">{{related[1]}}</a></h4>
+              <h4><a href="/course/{{related_links[1]}}">{{related[1]}}</a></h4>
               <p>{{related_tag[1]}}</p>
             </div>
           </div>
@@ -457,7 +457,7 @@
           <div class="col-xl-3  d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-react"></i></div>
-              <h4><a href="/course/android">{{related[2]}}</a></h4>
+              <h4><a href="/course/{{related_links[2]}}">{{related[2]}}</a></h4>
               <p>{{related_tag[2]}}</p>
             </div>
           </div>
@@ -465,7 +465,7 @@
           <div class="col-xl-3  d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
               <div class="icon"><i class="bx bxs-data"></i></div>
-              <h4><a href="/course/android">{{related[3]}}</a></h4>
+              <h4><a href="/course/{{related_links[3]}}">{{related[3]}}</a></h4>
               <p>{{related_tag[3]}}</p>
             </div>
           </div>
@@ -571,51 +571,7 @@
     </section>
 
    
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>For any enquiry, just contact us.</p>
-        </div>
-
-           <div class="col-lg-9 mx-auto mt-5 mt-lg-0 d-flex align-items-center">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
+   
 
   </main>
 

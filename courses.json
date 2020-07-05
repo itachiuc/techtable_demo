@@ -7,6 +7,7 @@
             "prerequisites":["basic understanding of programming","determination"],
             "start_image":"link",
             "related":["IOS Development","Machine Learning","Ethical Hacking","Web Development"],
+            "related_links":["ios","ml","ethical","web"],
             "related_tag":["Be a part of Apple","Start manipulating data to predict future","Make your system more secure","Design the website you always dreamt of"],
             "faq":[["question one","answer one"],["question two","answer two"],["question three","answer three"],["question four","answer four"],["question five","answer five"]],
             "contents":["1. Introduction","2. Supervised Learning","3. Unsupervised Learing","4. Fine Tuning","5. Additional Contents"],
@@ -21,13 +22,75 @@
             "prerequisites":["basic understanding of programming","determination"],
             "start_image":"link",
             "related":["Machine Learning","Ethical Hacking","Android Development","IOS Development"],
+            "related_links":["ml","ethical","android","ios"],
             "related_tag":["Start manipulating data to predict future","Make your system more secure","Learn to create your own application","Be a part of Apple"],
             "faq":[["question one","answer one"],["question two","answer two"],["question three","answer three"],["question four","answer four"],["question five","answer five"]],
             "contents":["1. Introduction","2. Supervised Learning","3. Unsupervised Learing","4. Fine Tuning","5. Additional Contents"],
             "inner_contents":[["Intro","Setting up environment","Installing modules","End of chapter 1"],["Building our first model","Linear regression","logistic regression","KNN","Decision Tree","End of chapter 2"],["Clustering","Reinforcement learning","Hierarical Learning","End of chapter 3"],["Dimensionality Reduction","PCA","XGBOOST","End of chapter 4"],["Python Basics","Into to Deep Learning","Neural Network","End of chapter 5"]]
 
 
+        },
+
+        "ml":{
+            "name": "Machine Learning Bootcamp",
+            "tagline":"Learn to manipulate data for future prediction",
+            "requirements":["Laptop","Brower"],
+            "prerequisites":["basic understanding of programming","determination"],
+            "start_image":"link",
+            "related":["Web Development","Deep Learning","Android Development","IOS Development"],
+            "related_links":["web","deep","android","ios"],
+            "related_tag":["Start manipulating data to predict future","Make your system more secure","Learn to create your own application","Be a part of Apple"],
+            "faq":[["question one","answer one"],["question two","answer two"],["question three","answer three"],["question four","answer four"],["question five","answer five"]],
+            "contents":["1. Python","2. Fundamentals","3. Evaluation Metrics","4. Hypothesis Testing","5. Supervised Learning","6. Unsupervised Learning"],
+            "inner_contents":[["Basic Datatypes","Numpy","Pandas","Matplotlib","Seaborn"],["What is ML","DS v/s ML","Supervised Learning","Unsupervised Learning","Overfitting and Underfitting","Gradient Descent"],["Precision","Recall","Specificity","Mean Absolute Error","Mea Squared Error","Root Mean Squared Error"],["Type 1 and Tupe 2 error","P value","T test","Chi square test","Correlation"],["Types : Classification , Regression","Linear Regression","Lasso Regression","Logistic Regression","Bayesian Network","Decision Tree","SVM","Random Forest","Bagging and Boosting"],["K means Clustering","Recommendation System","Hierarical Clustering","DBSCAN Algorithm"]]
+
+
+        },
+
+        "ethical":{
+            "name": "Hands-on: Ethical Hacking",
+            "tagline":"Learn ethical hacking by a professional",
+            "requirements":["Laptop","Browser"],
+            "prerequisites":["Should be able to understand hacker tools and techniques","Strong work ethic"],
+            "start_image":"link",
+            "related":["Android Development","Machine Learning","Web Development","IOS Development"],
+            "related_links":["android","ml","web","ios"],
+            "related_tag":["Start manipulating data to predict future","Make your system more secure","Learn to create your own application","Be a part of Apple"],
+            "faq":[["question one","answer one"],["question two","answer two"],["question three","answer three"],["question four","answer four"],["question five","answer five"]],
+            "contents":["1. Introduction","2. Supervised Learning","3. Unsupervised Learing","4. Fine Tuning","5. Additional Contents"],
+            "inner_contents":[["Intro","Setting up environment","Installing modules","End of chapter 1"],["Building our first model","Linear regression","logistic regression","KNN","Decision Tree","End of chapter 2"],["Clustering","Reinforcement learning","Hierarical Learning","End of chapter 3"],["Dimensionality Reduction","PCA","XGBOOST","End of chapter 4"],["Python Basics","Into to Deep Learning","Neural Network","End of chapter 5"]]
+        },
+
+        "ios":{
+            "name": "The Complete IOS Development Course",
+            "tagline":"Develop the Apps that you always dreamt of",
+            "requirements":["Laptop (OS X)","No prior knowledge is required"],
+            "prerequisites":["basic understanding of programming","determination"],
+            "start_image":"link",
+            "related":["Ethical Hacking","Machine Learning","Android Development","Web Development"],
+            "related_links":["ethical","ml","android","web"],
+            "related_tag":["Start manipulating data to predict future","Make your system more secure","Learn to create your own application","Be a part of Apple"],
+            "faq":[["question one","answer one"],["question two","answer two"],["question three","answer three"],["question four","answer four"],["question five","answer five"]],
+            "contents":["1. Getting Started with XCode & Playgrounds","2. Swift Programming Language","3. Different UI Controls in iOS App","4. Intro to MVC & MVVM Architectures","5. UI Development using Storybaord, XIB & by coding","6. Networking (REST API)","7. CoreData framework","8. Push Notifications Introduction","9. Location & Map framework","10. Publishing to App Store","11. Others"],
+            "inner_contents":[["Features of XCode","How to build & run the app","Different windows in XCode","How to debug on device","What is 'Playground'?","Application Creation Wizard","Application Life cycle","Apple developer account Intro"],["Variables & Loops","Classes","Struct, Classes, Enums","Protocols & Extensions","Inheritence","Delegation design pattern","View controller life cycle","Strings","Collections - Array, Set, Dictionary"],["Labels & Buttons","Text Fields & Text Views","Table view & Collection View","Picker","Stepper, Loading Indicator","Progress bar","View & View Controllers"],["Models","Views","View Controllers","View Models","Dependency Injection"],["Intro to Autolayout","Constraints & Trait Classes","Aligning UI elements","Stack views","Application Flow in storyboard","Re-usable component with XIB"],["Introduction to REST API","Methods of API calls - Post, Get, Put, Delete etc","URLSession","Data task","Data task","Download Task"],["Coredata Stack introduction","Managed Object Context & Managed Objects","Entity, Attributes & Relationships","Creating, Updating, Deleting Records"],["Introduction to push notifications","Local Notifications","Remote notifications","Demo"],["Introduction to Maps","Location permissions","Captiuring user location (while moving)","Annotations on Maps"],["Handling Profiles","Creating Distribution certificate","Using Testflight for distribution","Using AppCenter for distribution"],["Git Introduction","CocoaPods for dependency management","Using 3rd party frameworks"]]
+        },
+
+        "deep":{
+            "name": "Deep Learning Bootcamp",
+            "tagline":"Dive deeper into prediction learning",
+            "requirements":["Laptop","CUDA enabled GPU"],
+            "prerequisites":["basic understanding of programming","determination"],
+            "start_image":"link",
+            "related":["Machine Learning","Ethical Hacking","Android Development","IOS Development"],
+            "related_links":["ml","ethical","android","ios"],
+            "related_tag":["Start manipulating data to predict future","Make your system more secure","Learn to create your own application","Be a part of Apple"],
+            "faq":[["question one","answer one"],["question two","answer two"],["question three","answer three"],["question four","answer four"],["question five","answer five"]],
+            "contents":["Week 1","Week 2","Week 3","Week 4"],
+            "inner_contents":[["Basics of Neural Networks","MP Neuron , Perceptron , MLP's","Representation power of MP neurons ,Perceptron and Neural Networks","Activation Functions"],["Learning Algorithm","Loss Function","Regularization","Hyperparameter Tuning","Batch Normalization","Into to Jupyter notebook ","Into to pytorch and tensorflow","NN Demo Session"],["CNNs","Convolution Operation","Pooling","Famous CNN - Alexnet ,VGG ,etc","Applications- Object detection","Localization","Neural Style Transfer","CNN Demo Session"],["RNNS","Word Embedding","GRUs , LSTM's","Encoder Decoder","Mechanism , Attention","Applications","RNN Demo Session"]]
+
+
         }
+
     }
 }
 
